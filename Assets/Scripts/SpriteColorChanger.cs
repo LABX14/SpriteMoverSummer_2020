@@ -10,6 +10,7 @@ public class SpriteChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // this takes the sprite and changes the color and transparency of it
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         //spriteRenderer.color = color;
     }
