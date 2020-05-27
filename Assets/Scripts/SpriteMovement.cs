@@ -15,8 +15,24 @@ public class SpriteMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // This controls the direction the sprite is going and it also includes the speed of it. 
-        // The speed is determined by the "public float movingSpeed = 0.1f;"
-        transform.position += Vector3.right * movingSpeed;
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            // This controls the direction the sprite is going and it also includes the speed of it. 
+            // The speed is determined by the "public float movingSpeed = 0.1f;"
+            transform.position += Vector3.right * movingSpeed;
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.position += Vector3.left * movingSpeed;
+        }
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.position += Vector3.up * movingSpeed;
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.position += Vector3.down * movingSpeed;
+        }
     }
 }
