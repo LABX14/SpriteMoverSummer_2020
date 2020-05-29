@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteChanger : MonoBehaviour
+public class SpriteColorChanger : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     public Color color;
@@ -12,7 +12,7 @@ public class SpriteChanger : MonoBehaviour
     {
         // this takes the sprite and changes the color and transparency of it
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        //spriteRenderer.color = color;
+        // spriteRenderer.color = color;
     }
 
     // Update is called once per frame

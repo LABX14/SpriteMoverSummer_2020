@@ -258,8 +258,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1432880200}
   - component: {fileID: 1432880199}
-  - component: {fileID: 1432880201}
   - component: {fileID: 1432880202}
+  - component: {fileID: 1432880201}
   m_Layer: 0
   m_Name: Space Ship
   m_TagString: Untagged
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db747c2a126bdfc40967c43b6ada324e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1432880202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,3 +356,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingSpeed: 0.1
+  increaseSpeed: 0.1

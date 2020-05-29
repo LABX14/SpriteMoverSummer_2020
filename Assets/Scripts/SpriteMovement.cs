@@ -6,6 +6,7 @@ public class SpriteMovement : MonoBehaviour
 {
     // this is what determines the default speed for the ship
     public float movingSpeed = 0.1f;
+    public float increaseSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,14 @@ public class SpriteMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.DownArrow))
         {
             transform.position += Vector3.down * movingSpeed;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+           movingSpeed += increaseSpeed * 2;
+        }
+        else
+        {
+            movingSpeed /= 2;
         }
     }
 }
